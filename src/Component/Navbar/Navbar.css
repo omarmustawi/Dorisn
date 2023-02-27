@@ -1,0 +1,130 @@
+.navbar {
+    position: relative !important;
+    margin: 0;
+    padding: 0 !important;
+    width: 100%;
+}
+.active { 
+    background-color: #272a33 ;
+    position: fixed !important;
+    height: 69px;
+    z-index: 20000;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+.iconBar {
+    display: none;
+}
+.sections {
+    font-size: 20px;
+    position: fixed;
+    color: #ccc;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin: 20px 100px;
+}
+.sections ul {
+    width: 100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 5%;
+}
+  
+.sections ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #ccc;
+}
+.sections ul li a:hover {
+    color: #fff;
+}
+  
+.logo {
+    z-index: 1000;
+}
+
+.sections .TryItFree {
+    color: #fff;
+    background-color: #fb3e3e;
+    border: #fb3e3e 2px solid;
+    border-radius: 33px;
+    width: 159px;
+    padding: 5px 6px;
+    margin-left: 4%;
+}
+
+
+
+
+/* Mobile Rules */
+@media (max-width: 859px) {
+    .sections {
+        justify-content: center;
+        gap: 50%;
+        margin-left: 0;
+    } 
+    .navbar {
+        background-color: #272a33 ;
+        position: fixed !important;
+        width: 100%;
+        height: 69px;
+        z-index: 20000;
+        transition: 0.3s ease-in-out;
+    }
+    .sections ul {
+        position: absolute;
+        /* top: -509px; */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        background-color: #272a33;
+        flex-direction: column;
+        transition: 1s ease-in-out;
+        padding: 0 !important;
+    }
+    .showUl {
+        opacity: flex !important;
+    }
+    .hideUl {
+        display: none !important;
+    }
+    
+    .iconBar {
+        /* position: absolute;
+        top: 5px;
+        right: 30px;
+        display: block; */
+        z-index: 1000;
+    }
+    .showIcon {
+        display: block;
+    }
+    .hideIcon {
+        display: none;
+    }
+    .sections {
+        justify-content: space-around;
+    }
+}
+/* Tablate  Rules */
+@media screen and (min-width: 860px) and (max-width: 1100px) {
+    .sections {
+            margin: 20px;
+    }
+}
+
+
+

@@ -1,0 +1,96 @@
+.services , .pricing , .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0px 0px;
+}
+.services .Boxs {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+} 
+.services .parent {
+    width: 100%;
+    height: auto;
+    background-color: #f8f9fa ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 75px 75px 0px;
+    padding: 100px;
+    text-align: left;
+}
+
+.services .parent .col {
+    width: 50%;
+    height: auto;
+
+}
+.services .parent .col h6 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.services .parent .col p{
+    font-size: 17px;
+    width: 90%;
+    margin: 52px 0;
+    text-align: left !important;
+}
+.services .parent .col ul li {
+    color: #95a0ab;
+    font-size: 17px;
+}
+.services .parent .col ul li::marker {
+    color: #fb3e3e;
+    font-size: 25px;
+}
+
+.services .parent .col .Button , .boxPrice .Button {
+    background-color: #fb3e3e;
+    border: #fb3e3e solid 2px;
+    padding: 10px;
+    width: 150px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+}
+#phone {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .services .Boxs {
+        margin: 0px;
+    }
+    .services .parent {
+        flex-direction: column;
+        margin: 0px;
+        padding: 6%;
+    }
+    .services .parent .col {
+        width: 100%;
+    }
+    .services .parent .col h6 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .services .parent .col p {
+        font-size: 15px;
+        margin: 30px 0;
+    }
+    /* .services .parent .col .Button {
+        margin: 0px;
+    } */
+      
+      
+}

@@ -1,0 +1,49 @@
+.allBlogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.oneDataBlog  {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out ;
+}
+.oneDataBlog:hover {
+    transform: translateY(-10px);
+}
+.oneDataBlog img {
+    width: 400px;
+    height: auto;
+    box-shadow: 0px 0px 9px 0px #95a0ab;
+    border-radius: 3px;
+}
+.oneDataBlog .job,
+.oneDataBlog p {
+    color: #95a0ab;
+    margin: 10px 0px;
+}
+.oneDataBlog .title {
+    font-weight: 700;
+    margin: 10px 0px;
+}
+.oneDataBlog button {
+    color: red;
+    border: none;
+    background: #fff;
+}
+
+/* small screen */
+@media (max-width: 767px) {
+    .oneDataBlog {
+        width: 80%;
+    }
+    .oneDataBlog img {
+        width: 100%;
+    }
+}

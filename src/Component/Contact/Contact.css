@@ -1,0 +1,95 @@
+/* .contact {
+    position: relative;
+    bottom: -679px;
+} */
+.contact .all {
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+.contact .all .adresses {
+    width: 500px;
+}
+.contact .all .adresses p {
+    color: #95a0ab;
+}
+.contact .all .sending {
+    width: calc( 100% -  500px );
+    min-width: 400px;
+    margin: auto;
+}
+.contact .all .sending input, textarea {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid #e0e0e0;
+    font-size: 17px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.contact .all .sending .half {
+    width: 49%; 
+    display: inline-block;   
+}
+.submit {
+    background-color: #fb3e3e;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fb3e3e;
+    border-radius: 0.25rem;
+    width: 150px;
+    padding: 10px 20px;
+    font-size: 14px;
+    letter-spacing: .5px;
+    position: relative;
+    left: 73%;
+}
+
+/* Mobile Rules */
+@media (max-width: 767px) {
+    .submit {
+        left: 0;
+        margin-top: 10px;
+    }
+    .contact .all {
+        margin: 10px;
+    }
+    .contact .all .adresses {
+        width: 100%;
+        text-align: center;    
+    }
+    .contact .all .sending {
+        width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact .all .sending .half {
+        width: 90%;
+        display: block;
+        margin-right: 0px !important;
+    }
+    .contact .all .sending input, textarea {
+        display: block;
+        margin-right: 0;
+        width: 90%;
+    }
+}
+/* Tablate  Rules */
+@media screen and (min-width: 768px) and (max-width: 1150px) {
+    .contact .all {
+        margin: 30px;
+      }
+      .contact .all .adresses {
+        width: 250px;
+      }
+      .submit {
+        left: 0;
+      }
+}

@@ -1,0 +1,36 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro p {
+    color: #95a0ab;
+    width: 50%;
+    text-align: center !important;
+    margin-top: 20px;
+}
+.intro h5 {
+    font-size: 30px;
+    margin: 100px 0 0px 0px;
+}
+.intro .line {
+    width: 100px;
+    height: 3px;
+    background-color: #fb3e3e;
+    margin: 20px 0px !important;
+}
+
+/*  for screen width <= 500 px  */
+@media (max-width: 500px) {
+    .intro h5 {
+        font-size: 20px;
+        margin: 57px 0 0px 0px;
+      }
+      .intro p {
+        color: #95a0ab;
+        width: 61%;
+        text-align: center !important;
+        margin-top: 10px;
+        font-size: 15px;
+      }
+}

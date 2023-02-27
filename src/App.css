@@ -1,0 +1,26 @@
+.backgroundImage2 {
+    background: url("../src/assets/manWithLaptop.jpg") center no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.wideButton {
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 14px;
+    width: 200px;
+    height: auto;
+    font-weight: 400;
+}
+
+/* .blog {
+    position: relative;
+    top: 700px;
+} */
+
+
+button:focus {
+    box-shadow: 0 0 3px 2px #dad7d7bb;
+    transition: .5s ease-in-out;
+}
